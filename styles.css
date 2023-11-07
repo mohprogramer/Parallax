@@ -3,3 +3,45 @@
     margin: 0;
     font-family: 'Open Sans', sans-ser
 }
+
+.container{
+    background-color:#111;
+}
+
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.saluteTextContainer{
+    flex: 3;
+}
+
+.saluteImageContainer {
+    flex: 1;
+}
+
+.saluteText{
+    color: #333;
+    font-size: 60vw;
+    cursor: default;
+}
+
+.saluteImage{
+    width: 100%;
+}
+
+.nameContainer {
+    height: 100vh;
+    background-color: rebeccapurple;
+}
+
+.name{
+    font-size: 12vw;
+    color: #333;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+}
