@@ -45,3 +45,23 @@
     text-align: center;
     line-height: 100vh;
 }
+
+.jonTitleContainer{
+    height: 100vh;
+}
+
+.dark{
+    background: url('./img/bg1.png');
+}
+
+
+.purple{
+    background: rebeccapurple url('./img/bg2.png');
+}
+
+.jobTitle{
+    font-size: 10vw;
+    color: #333;
+    line-height: 100vh;
+    cursor: default;
+}
