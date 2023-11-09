@@ -65,3 +65,23 @@
     line-height: 100vh;
     cursor: default;
 }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+}
+
+.projectsTitle {
+    font-size: 10vw;
+    color: #333;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vw;
+    overflow: hidden;
+}
