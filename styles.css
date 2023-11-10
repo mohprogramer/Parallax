@@ -182,13 +182,44 @@ transform: translateX(100%);
     justify-content: center;
 }
 
-.githubTilte{
+.githubTitle{
 font-size: 100px;
 color: #333;
+}
+
+.githubChart{
+  width: 820px;
 }
 
 .dates{
     padding: 10px;
     color: #555;
     font-size: 12px;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 2s all ease;
+}
+
+.active:nth-child(4n) {
+    background-color:#195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n){
+    background-color: #063f24;
 }
