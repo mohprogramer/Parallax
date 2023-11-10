@@ -74,10 +74,10 @@
     padding: 0px 100px;
 }
 
+
 .projectsTitle{
     font-size: 10vw;
     color: #333;
-    text-align: center;
 }
 
 .project{
@@ -86,6 +86,10 @@
     gap: 100px;
     height: 100vh;
     overflow: hidden;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
 }
 
 .phone{
@@ -153,3 +157,22 @@ align-items: center;
 .projectButtun:hover.projectButtun::after {
 transform: translateX(100%);
 }
+
+.laptop{
+    width: 600px;
+    height: 379px;
+    flex: 1;
+    position: relative;
+}
+
+.laptopScreen{
+    width: 451px;
+    height: 283px;
+    position: absolute;
+    top: 18px;
+    left:68px ;
+    background-color: aquamarine;
+}
+
+.githubContainer
+
