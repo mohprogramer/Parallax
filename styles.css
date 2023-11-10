@@ -6,6 +6,7 @@
 
 .container{
     background-color:#111;
+    overflow: hidden;
 }
 
 .salute {
@@ -19,7 +20,7 @@
     flex: 3;
 }
 
-.saluteImageContainer {
+.saluteImageContainer{
     flex: 1;
 }
 
@@ -73,16 +74,17 @@
     padding: 0px 100px;
 }
 
-.projectsTitle {
+.projectsTitle{
     font-size: 10vw;
     color: #333;
+    text-align: center;
 }
 
 .project{
     display: flex;
     align-items: center;
     gap: 100px;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
