@@ -1,4 +1,7 @@
 const boxContainer = document.querySelector(".boxContainer");
+const saluteTextContainer = document.querySelector(".saluteTextContainer");
+const saluteImageContainer = document.querySelector(".saluteImageContainer");
+const AuthorName = document.querySelector(".name");
 
 
 for(let i = 0; i<365; i++){
@@ -24,3 +27,11 @@ for(let i = 0; i<365; i++){
     el.classList = list.includes(i) ? "box active" : "box"
     boxContainer.appendChild(el)
 }
+
+window.addEventListener("scroll",() => {
+  let scrollY = window.scrollY;
+  saluteTextContainer.style.transform  = `translateY(${scrollY * 0.1}px)` 
+  saluteImageContainer.style.transform  = `translate(${scrollY * 0.4}px, ${scrollY * 0.7}px)` 
+  AuthorName.style.transform  = `translateX(${scrollY * 0.1}px)` 
+
+})
