@@ -4,6 +4,11 @@ const saluteImageContainer = document.querySelector(".saluteImageContainer");
 const authorName = document.querySelector(".name");
 const jonTitleContainer = document.querySelectorAll(".jonTitleContainer");
 const jobTitle = document.querySelectorAll(".jobTitle");
+const projectsTitle = document.querySelector(".projectsTitle");
+const phone = document.querySelectorAll(".phone");
+const laptop = document.querySelector(".laptop");
+
+
 
 
 for(let i = 0; i<365; i++){
@@ -34,10 +39,14 @@ window.addEventListener("scroll",() => {
   let scrollY = window.scrollY;
   saluteTextContainer.style.transform  = `translateY(${scrollY * 0.1}px)` 
   saluteImageContainer.style.transform  = `translate(${scrollY * 0.4}px, ${scrollY * 0.7}px)` 
-  authorName.style.transform  = `translateX(${scrollY * 0.1}px)`
+  authorName.style.transform  = `translateX(calc(-90vh + ${scrollY}px))`
   jonTitleContainer[0].style.backgroundPositionY = `${scrollY * 0.5}px` 
   jonTitleContainer[1].style.backgroundPositionY = `${-scrollY * 0.5}px` 
   jobTitle[0].style.transform = `translateX(calc(200vh - ${scrollY}px))` 
   jobTitle[1].style.transform = `translateX(calc(-300vh + ${scrollY}px))` 
+  projectsTitle.style.transform = `translateY(calc(400vh - ${scrollY}px))` 
+  phone[0].style.transform = `translateX(calc(500vh - ${scrollY}px))` 
+  laptop.style.transform = `translateX(calc(620vh - ${scrollY}px))` 
+  phone[1].style.transform = `translateX(calc(760vh - ${scrollY}px))` 
 
 })
