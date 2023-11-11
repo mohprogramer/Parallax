@@ -1,7 +1,9 @@
 const boxContainer = document.querySelector(".boxContainer");
 const saluteTextContainer = document.querySelector(".saluteTextContainer");
 const saluteImageContainer = document.querySelector(".saluteImageContainer");
-const AuthorName = document.querySelector(".name");
+const authorName = document.querySelector(".name");
+const jonTitleContainer = document.querySelectorAll(".jonTitleContainer");
+const jonTitle = document.querySelectorAll(".jonTitle");
 
 
 for(let i = 0; i<365; i++){
@@ -32,6 +34,9 @@ window.addEventListener("scroll",() => {
   let scrollY = window.scrollY;
   saluteTextContainer.style.transform  = `translateY(${scrollY * 0.1}px)` 
   saluteImageContainer.style.transform  = `translate(${scrollY * 0.4}px, ${scrollY * 0.7}px)` 
-  AuthorName.style.transform  = `translateX(${scrollY * 0.1}px)` 
+  authorName.style.transform  = `translateX(${scrollY * 0.1}px)`
+  jonTitleContainer[0].style.backgroundPositionY = `${scrollY * 0.5}px` 
+  jonTitleContainer[1].style.backgroundPositionY = `${-scrollY * 0.5}px` 
+  jonTitle[0].style.backgroundPositionY = `${-scrollY * 0.5}px` 
 
 })
