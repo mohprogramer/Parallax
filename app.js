@@ -11,6 +11,7 @@ const laptop = document.querySelector(".laptop");
 
 
 
+
 for(let i = 0; i<365; i++){
 
     const list = [
